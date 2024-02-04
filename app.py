@@ -2,8 +2,6 @@ import streamlit as st
 import pickle
 import os
 import numpy as np
-# import matplotlib.pyplot as plt
-from skimage import io # type: ignore
 from skimage.transform import resize
 from PIL import Image
 
@@ -22,8 +20,6 @@ if uploaded_file is not None:
         st.header('Results: ')
         flat_data = []
         img = np.array(img)
-        # url = input('enter ur url')
-        # img = io.imread(url)
         img_resize = resize(img,(150,150,3))
         flat_data.append(img_resize.flatten())
         flat_data = np.array(flat_data)
