@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import os
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from skimage import io # type: ignore
 from skimage.transform import resize
 from PIL import Image
